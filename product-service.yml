@@ -1,0 +1,6 @@
+spring :
+  kafka:
+    kafka-server: localhost:9092
+    consumer:
+      group-id: product-group # group-id는 같은 메시지를 다른 용도로 독립적으로 처리하기위해 존재함.
+      auto-offset-reset: earliest # 컨슈머가 처음 시작할 때 어디서부터 메시지를 읽을지 지정하는 설정 : 가장 오래된 메시지부터 읽기 시작함.
